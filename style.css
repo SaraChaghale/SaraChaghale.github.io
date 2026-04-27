@@ -11,7 +11,7 @@
 body {
     background-color: var(--bg-dark);
     color: var(--text-main);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.7;
@@ -41,16 +41,16 @@ body {
 
 
 .container {
-    max-width: 900px;
+    max-width: 1000px; 
     margin: 0 auto;
     padding: 20px;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #fff;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
 }
@@ -63,115 +63,130 @@ h2::after {
     margin-left: 20px;
 }
 
-
 #about p, #tech-stack ul, #other-projects ul {
-    background: transparent;
-    border: none;
-    padding: 0;
-    font-size: 1.05em;
+    font-size: 1.1em;
     color: var(--text-main);
+    margin-bottom: 20px;
 }
 
 .tech-list {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
 }
 
-.tech-list li {
-    margin-bottom: 12px;
-}
-
-/* PROYECTOS DE GIT: Aquí sí usamos bloques para destacar */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
+
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    display: block;
+    text-decoration: none;
 }
 
 .project-card img {
     width: 100%;
+    height: auto;
     border-radius: 12px;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     background: var(--card-bg);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .project-card img:hover {
     border-color: var(--accent);
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(46, 139, 87, 0.2);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(46, 139, 87, 0.2);
 }
 
 
 .timeline {
     border-left: 2px solid var(--border);
-    margin-left: 10px;
-    padding-left: 35px;
+    margin-left: 15px;
+    padding-left: 40px;
     position: relative;
+    margin-top: 40px;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .dot {
     position: absolute;
-    left: -44px;
-    top: 8px;
+    left: -49px;
+    top: 6px;
     width: 16px;
     height: 16px;
     background: var(--accent);
     border-radius: 50%;
-    box-shadow: 0 0 12px var(--accent);
+    box-shadow: 0 0 15px var(--accent);
     border: 3px solid var(--bg-dark);
 }
 
 .timeline-content h3 {
     margin: 0;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .company {
     color: var(--accent);
-    font-weight: 600;
+    font-weight: 700;
     display: block;
     margin-bottom: 10px;
+    font-size: 1em;
 }
 
-/* FOOTER */
+
 .main-footer {
     background-color: var(--header-footer-bg);
     border-top: 1px solid var(--border);
-    padding: 50px 20px;
-    margin-top: 80px;
+    padding: 60px 20px;
+    margin-top: 100px;
     text-align: center;
 }
 
 .main-footer p {
     color: var(--text-dim);
-    font-size: 0.85em;
-    margin-top: 20px;
+    font-size: 0.9em;
+    margin-top: 25px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .project-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+    }
+    .container {
+        padding: 15px;
     }
     .main-header {
-        padding: 40px 15px;
+        padding: 40px 20px;
     }
 }
+
 
 a {
     color: var(--accent);
     text-decoration: none;
-    transition: 0.2s;
+    font-weight: 500;
 }
 
 a:hover {
-    text-shadow: 0 0 5px rgba(46, 139, 87, 0.5);
+    text-decoration: underline;
+}
+
+.social-badges img {
+    transition: transform 0.2s;
+}
+
+.social-badges img:hover {
+    transform: scale(1.1);
 }
