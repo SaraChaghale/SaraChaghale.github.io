@@ -8,41 +8,60 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <div class="container">
         <header align="center">
-            <img src="https://github.com/SaraChaghale.png" alt="Sara Chaghale" class="profile-img">
+            <img src="https://github.com/SaraChaghale.png" class="profile-img">
             <h1>Sara Chaghale Nached</h1>
-            <p class="tagline">Profesora de Programación • Backend Developer</p>
-            <div class="social-links">
-                <a href="https://github.com/SaraChaghale" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/sara-chaghale-b81a8834a" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:saritachaghale@gmail.com"><i class="fas fa-envelope"></i> M Email</a>
+            <p class="tagline"><b>Profesora de Programación • Backend Developer</b></p>
+            <div class="social-badges">
+                <a href="https://github.com/SaraChaghale" target="_blank"><img src="https://img.shields.io/badge/GitHub-2E8B57?style=flat-square&logo=github&logoColor=white"></a>
+                <a href="https://www.linkedin.com/in/sara-chaghale-b81a8834a" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-2E8B57?style=flat-square&logo=linkedin&logoColor=white"></a>
+                <a href="mailto:saritachaghale@gmail.com"><img src="https://img.shields.io/badge/Email-2E8B57?style=flat-square&logo=gmail&logoColor=white"></a>
             </div>
         </header>
 
         <section id="about">
             <h2>Sobre mí</h2>
-            <p>Soy desarrolladora full-stack junior y <strong>Profesora de Programación</strong>. Me apasiona construir sistemas sólidos y eficientes, disfrutando del resto de resolver problemas complejos.</p>
+            <div class="card">
+                <p>Soy desarrolladora full-stack junior y <strong>Profesora de Programación</strong>. Me apasiona construir sistemas sólidos y eficientes, disfrutando del resto de resolver problemas complejos. Busco seguir creciendo en entornos dinámicos donde el backend sea clave.</p>
+            </div>
+        </section>
+
+        <section id="tech-stack">
+            <h2>Tech Stack</h2>
+            <div class="card">
+                <ul class="tech-list">
+                    <li>✅ <b>Lenguajes:</b> PHP • Kotlin • Java • Python • C# • C++ • JS • HTML • CSS • GD</li>
+                    <li>✅ <b>Frameworks:</b> Symfony • Springboot • Django</li>
+                    <li>✅ <b>Bases de Datos:</b> MySQL • Firebase • SilentWolf • Firebird</li>
+                    <li>✅ <b>Herramientas:</b> Wordpress • Git • Android Studio • Docker • Odoo</li>
+                </ul>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Proyectos Destacados</h2>
-            <div class="grid-container">
+            <h2>Proyectos en Git</h2>
+            <div class="project-grid">
                 <div class="project-card">
-                    <div class="card-header">
-                        <i class="fas fa-code"></i> <h3>Tasky</h3>
-                    </div>
-                    <p>App para gestión de tareas personalizada con persistencia de datos.</p>
-                    <div class="tags"><span>Kotlin</span><span>Firebase</span></div>
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SaraChaghale&repo=Tasky&theme=tokyonight&border_color=2E8B57&icon_color=2E8B57&title_color=2E8B57" alt="Tasky">
                 </div>
                 <div class="project-card">
-                    <div class="card-header">
-                        <i class="fas fa-database"></i> <h3>MyTrains</h3>
-                    </div>
-                    <p>Sistema de gestión de entrenamientos y clientes.</p>
-                    <div class="tags"><span>Kotlin</span><span>SQLite</span></div>
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SaraChaghale&repo=MyTrains&theme=tokyonight&border_color=2E8B57&icon_color=2E8B57&title_color=2E8B57" alt="MyTrains">
                 </div>
+                <div class="project-card">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SaraChaghale&repo=web-limpiezas-neide&theme=tokyonight&border_color=2E8B57&icon_color=2E8B57&title_color=2E8B57" alt="Neide">
+                </div>
+            </div>
+        </section>
+
+        <section id="other-projects">
+            <h2>Otros proyectos</h2>
+            <div class="card">
+                <ul>
+                    <li> <b>Play Store:</b> <a href="https://play.google.com/store/apps/developer?id=Bribon+Rojo+Studios" target="_blank">Bribon Rojo Studios</a></li>
+                    <li> <b>Web (2022):</b> <a href="https://web.archive.org/web/20240223195038/https://descansados2021.es/" target="_blank">Descansados2021</a></li>
+                    <li> <b>Web (2020):</b> <a href="https://web.archive.org/web/20240613013052/https://limpiezasneide.com/" target="_blank">Limpiezas Neide</a></li>
+                </ul>
             </div>
         </section>
 
@@ -51,30 +70,25 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="dot"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content card">
                         <h3>Profesora de Programación</h3>
                         <p class="company">Cantera de Empresas | 2025 - Actual</p>
-                        <p>Formación técnica y mentoría en lógica de programación.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="dot"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content card">
                         <h3>Prácticas Backend</h3>
                         <p class="company">Ginsa Informatica | 2025</p>
-                        <p>Optimización de lógica de servidor y bases de datos en entornos reales de producción.</p>
-                        <div class="tech-icons">
-                            <img src="https://skillicons.dev/icons?i=php,symfony,mysql,git" height="25" alt="PHP, Symfony, MySQL, Git" />
-                        </div>
+                        <img src="https://skillicons.dev/icons?i=php,symfony,mysql,git" height="30">
                     </div>
                 </div>
             </div>
         </section>
 
         <footer align="center">
-            <p>© 2026 | Hecho con 💚 por Sara Chaghale | Xàtiva, Valencia</p>
+            <p>© 2026 | Desarrollado con ❤️ por Sara Chaghale</p>
         </footer>
     </div>
-
 </body>
 </html>
