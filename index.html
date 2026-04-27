@@ -2,44 +2,74 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sara Chaghale | Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Chaghale | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <div class="container">
-        <section>
+        <header>
+            <img src="https://github.com/SaraChaghale.png" alt="Sara Chaghale" class="profile-img">
+            <h1>Sara Chaghale Nached</h1>
+            <p class="tagline">Profesora de Programación • Backend Developer</p>
+            <div class="links">
+                <a href="https://github.com/SaraChaghale">GitHub</a>
+                <a href="https://www.linkedin.com/in/sara-chaghale-b81a8834a">LinkedIn</a>
+                <a href="mailto:saritachaghale@gmail.com">Email</a>
+            </div>
+        </header>
+
+        <section id="about">
             <h2>Sobre mí</h2>
-            <p>Soy desarrolladora full-stack junior y <strong>Profesora de Programación</strong>. Me apasiona construir sistemas sólidos y eficientes, disfrutando del resto de resolver problemas complejos...</p>
+            <p>Soy desarrolladora full-stack junior y <strong>Profesora de Programación</strong>. Me apasiona construir sistemas sólidos y eficientes. Mi enfoque principal es el Backend, pero mi formación en DAM me permite entender todo el ciclo de vida de una aplicación.</p>
         </section>
 
-        <section>
-            <h2>Proyectos</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="card-header">
-                        <span class="icon">code</span> <strong>Tasky</strong>
-                    </div>
-                    <p>App para realizar una lista de tareas personalizada.</p>
-                    <div class="tags">
-                        <span>Kotlin</span><span>Retrofit</span><span>Firebase</span>
-                    </div>
+        <section id="projects">
+            <h2>Proyectos Destacados</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-title">Tasky</div>
+                    <p>App para gestión de tareas personalizada con persistencia de datos.</p>
+                    <div class="tags"><span>Kotlin</span><span>Firebase</span></div>
                 </div>
+                <div class="card">
+                    <div class="card-title">MyTrains</div>
+                    <p>Sistema de gestión de entrenamientos y clientes.</p>
+                    <div class="tags"><span>Kotlin</span><span>SQLite</span></div>
                 </div>
+            </div>
         </section>
 
-        <section>
+        <section id="experience">
             <h2>Experiencia</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+                    <div class="dot"></div>
+                    <div class="content">
                         <h3>Profesora de Programación</h3>
-                        <p class="date">Septiembre 2025 - Actualidad</p>
-                        <p>Cantera de Empresas</p>
+                        <span class="place">Cantera de Empresas</span> | <span class="date">2025 - Actual</span>
+                        <p>Formación técnica y mentoría en lógica de programación.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>Prácticas Backend</h3>
+                        <span class="place">Ginsa Informatica</span> | <span class="date">2025</span>
+                        <div class="tech-icons">
+                            <img src="https://skillicons.dev/icons?i=php,symfony,mysql,git" height="25">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <p>© 2026 | Hecho con 💚 por Sara Chaghale | Xàtiva, Valencia</p>
+        </footer>
     </div>
+
 </body>
 </html>
